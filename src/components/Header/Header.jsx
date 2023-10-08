@@ -5,7 +5,10 @@ import "./header.css";
 
 import { motion } from "framer-motion";
 
-import logo from "../../assets/images/eco-logo.png";
+
+import AreaVerde from './Assets/AreaVerde.png'
+
+
 import userIcon from "../../assets/images/user-icon.png";
 
 import { Container, Row } from "reactstrap";
@@ -19,15 +22,27 @@ import { toast } from "react-toastify";
 const nav__links = [
   {
     path: "home",
-    display: "Home",
+    display: "Inicio",
   },
   {
     path: "shop",
-    display: "Shop",
+    display: "Tienda",
   },
   {
     path: "cart",
-    display: "Cart",
+    display: "Carrito",
+  },
+  {
+    path: "Nosotros",
+    display: "Nosotros",
+  },
+  {
+    path: "Proyectos",
+    display: "Proyectos Realizados",
+  },
+  {
+    path: "Consultorias",
+    display: "Consultorias",
   },
 ];
 
@@ -85,9 +100,9 @@ const Header = () => {
         <Row>
           <div className="nav__wrapper">
             <div className="logo">
-              <img src={logo} alt="logo" />
+              <img src={AreaVerde} alt="logo" />
               <div>
-                <h1>Multimart</h1>
+                <h1>Area Verde</h1>
               </div>
             </div>
 
@@ -144,8 +159,8 @@ const Header = () => {
                     </div>
                   ) : (
                     <div className=" d-flex align-items-center justify-content-center flex-column">
-                      <Link to="/signup">Signup</Link>
-                      <Link to="/login">Login</Link>
+                      <Link to="/signup">Registrarse</Link>
+                      <Link to="/login">Iniciar sesion</Link>
                       <Link to="/dashboard">Dashboard</Link>
                     </div>
                   )}

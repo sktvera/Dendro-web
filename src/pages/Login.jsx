@@ -44,17 +44,17 @@ const Login = () => {
           <Row>
             {loading ? (
               <Col lg="12" className="text-center">
-                <h5 className="fw-bold">Loading.....</h5>
+                <h5 className="fw-bold">Cargando.....</h5>
               </Col>
             ) : (
               <Col lg="6" className="m-auto text-center">
-                <h3 className="fw-bold mb-4">Login</h3>
+                <h3 className="fw-bold mb-4">Inicio De Seion</h3>
 
                 <Form className="auth__form" onSubmit={signIn}>
                   <FormGroup className="form__group">
                     <input
                       type="email"
-                      placeholder="Enter your email"
+                      placeholder="Ingresa tu email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                     />
@@ -62,18 +62,18 @@ const Login = () => {
                   <FormGroup className="form__group">
                     <input
                       type="password"
-                      placeholder="Enter your password"
+                      placeholder="Ingresa tu contraseña"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                     />
                   </FormGroup>
 
                   <button type="submit" className="buy__btn auth__btn">
-                    Login
+                    Iniciar Sesion
                   </button>
                   <p>
-                    Don't have an account?{" "}
-                    <Link to="/signup">Create an account</Link>
+                    Aun no tienes una cuenta ?{" "}
+                    <Link to="/signup">Crear Una Cuenta</Link>
                   </p>
                 </Form>
               </Col>

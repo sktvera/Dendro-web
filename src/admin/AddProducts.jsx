@@ -19,6 +19,9 @@ const AddProducts = () => {
   const navigate = useNavigate();
 
   const addProduct = async e => {
+
+
+
     e.preventDefault();
     setLoading(true);
 

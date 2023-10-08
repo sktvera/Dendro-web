@@ -13,7 +13,7 @@ const Footer = () => {
           <Col lg="4" className="mb-4" md="6">
             <div className="logo">
               <div>
-                <h1 className="text-white">Multimart</h1>
+                <h1 className="text-white">Dendro</h1>
               </div>
             </div>
             <p className="footer__text mt-4">
@@ -99,7 +99,7 @@ const Footer = () => {
 
           <Col lg="12">
             <p className="footer__copyright">
-              Copyright {year} developed by Muhibur Rahman. All rights reserved.
+              Copyright {year} developed by Julian Vera. All rights reserved.
             </p>
           </Col>
         </Row>

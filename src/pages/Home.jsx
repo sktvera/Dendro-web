@@ -88,11 +88,11 @@ const Home = () => {
         <Container>
           <Row>
             <Col lg="12" className="text-center">
-              <h2 className="section__title">Trending Products</h2>
+              <h2 className="section__title">TBienvenido a Area Verde!</h2>
             </Col>
 
             {loading ? (
-              <h5 className="fw-bold">Loading....</h5>
+              <h5 className="fw-bold">Cargando....</h5>
             ) : (
               <ProductsList data={trendingProducts} />
             )}
@@ -108,7 +108,7 @@ const Home = () => {
             </Col>
 
             {loading ? (
-              <h5 className="fw-bold">Loading....</h5>
+              <h5 className="fw-bold">Cargando....</h5>
             ) : (
               <ProductsList data={bestSalesProducts} />
             )}
@@ -130,7 +130,7 @@ const Home = () => {
                 whileTap={{ scale: 1.2 }}
                 className="buy__btn store__btn "
               >
-                <Link to="/shop">Visit Store</Link>
+                <Link to="/shop">Vsisita La Tienda</Link>
               </motion.button>
             </Col>
 
@@ -148,12 +148,12 @@ const Home = () => {
               <h2 className="section__title">New Arrivals</h2>
             </Col>
             {loading ? (
-              <h5 className="fw-bold">Loading....</h5>
+              <h5 className="fw-bold">Cargando....</h5>
             ) : (
               <ProductsList data={mobileProducts} />
             )}
             {loading ? (
-              <h5 className="fw-bold">Loading....</h5>
+              <h5 className="fw-bold">Cargando....</h5>
             ) : (
               <ProductsList data={wirelessProducts} />
             )}
@@ -168,7 +168,7 @@ const Home = () => {
               <h2 className="section__title">Popular in Category</h2>
             </Col>
             {loading ? (
-              <h5 className="fw-bold">Loading....</h5>
+              <h5 className="fw-bold">Cargando....</h5>
             ) : (
               <ProductsList data={popularProducts} />
             )}

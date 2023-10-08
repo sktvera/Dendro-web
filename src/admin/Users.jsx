@@ -19,22 +19,22 @@ const Users = () => {
       <Container>
         <Row>
           <Col lg="12">
-            <h4 className="fw-bold">Users</h4>
+            <h4 className="fw-bold">Usuarios</h4>
           </Col>
           <Col lg="12" className="pt-5">
             <table className="table ">
               <thead>
                 <tr>
-                  <th>Image</th>
+                  <th>Imagen</th>
                   <th>Username</th>
                   <th>Email</th>
-                  <th>Action</th>
+                  <th>Accion</th>
                 </tr>
               </thead>
 
               <tbody>
                 {loading ? (
-                  <h5 className="pt-5 fw-bold">Loading.....</h5>
+                  <h5 className="pt-5 fw-bold">Cargando.....</h5>
                 ) : (
                   usersData?.map(user => (
                     <tr key={user.uid}>
@@ -50,7 +50,7 @@ const Users = () => {
                             deleteUser(user.uid);
                           }}
                         >
-                          Delete
+                          Eliminar
                         </button>
                       </td>
                     </tr>

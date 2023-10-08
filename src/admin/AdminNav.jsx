@@ -1,10 +1,12 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
-
 import useAuth from "../custom-hooks/useAuth";
+import { NavLink } from "react-router-dom";
+
+
 import "../styles/admin-nav.css";
 
-import { NavLink } from "react-router-dom";
+
 
 const admin__nav = [
   {
@@ -40,7 +42,9 @@ const AdminNav = () => {
           <Container>
             <div className="admin__nav-wrapper-top">
               <div className="logo">
-                <h2>Multimart</h2>
+                <div>
+                  <img src="./Assets/AreaVerde.png" alt="" />
+                </div>
               </div>
 
               <div className="search__box">
